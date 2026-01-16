@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Offline Map (MBTiles → XYZ)</title>
+
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Leaflet (CDN). Lưu ý: để OFFLINE 100% ngay lần đầu, bạn có thể tải leaflet về /vendor -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+  <div class="topbar">
+    <div><b>Offline Map</b> — tiles local: <code>/tiles/{z}/{x}/{y}.png</code></div>
+    <div id="status">Loading…</div>
+  </div>
+
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
